@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="pig-dice-game" />
 		<title>Team Pig</title>
 		<link rel="stylesheet" href="./static/style.css" />
 	</head>
 	<body>
 		<!-- 숨김 제목 -->
-		<h1 class="sr-only">
-			피그 다이스 게임
+		<h1 class="title-game">
+			Pig Dice Game
 		</h1>
 		<!-- 게임 화면 -->
 		<main class="game-screen">
@@ -45,10 +46,12 @@
 			<form class="score-max">
 				<legend>SELECT TARGET SCORE</legend>
 				<fieldset>
-					<label>50</label>
-					<input type="radio" id="score_50" name="score_50" value="50"/>
-					<label>100</label>
-					<input type="radio" id="score_100" name="score_100" value="100"/>
+					<div>
+						<label for="score_50">50</label>
+						<input type="radio" id="score_50" name="score_50" value="50"/>
+						<label for="score_100">100</label>
+						<input type="radio" id="score_100" name="score_100" value="100"/>
+					</div>
 				</fieldset>
 			</form>
 		</main>
