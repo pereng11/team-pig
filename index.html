@@ -1,29 +1,59 @@
 <!DOCTYPE html>
-<html lang="ko-KR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Pig</title>
-  </head>
-  <body>
-    <section class="user-component player1">
-      <h2 class="user-name player1">PLAYER 1</h2>
-      <div class="score player1">0</div>
-      <div class="current-score player1">
-        <p>CURRENT</p>
-        <div class="total-score player1"></div>
-      </div>
-      <span class="red-dot player1"></span>
-    </section>
-    <section class="user-component player2">
-      <h2 class="user-name player2">PLAYER 2</h2>
-      <div class="score player2">0</div>
-      <div class="current-score player2">
-        <p>CURRENT</p>
-        <div class="total-score player2"></div>
-      </div>
-      <span class="red-dot player2"></span>
-    </section>
-  </body>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="pig-dice-game" />
+		<title>Team Pig</title>
+		<link rel="stylesheet" href="./static/style.css" />
+	</head>
+	<body>
+		<!-- 숨김 제목 -->
+		<h1 class="title-game">
+			Pig Dice Game
+		</h1>
+		<!-- 게임 화면 -->
+		<main class="game-screen">
+			<!-- 1. 게임 시작 버튼 -->
+			<button type="button" class="btn-new">NEW GAME</button>
+			<!-- 2. 컴포넌트 -->
+			<section class="user-component player1">
+				<h2 class="user-name player1">PLAYER 1</h2>
+				<div class="score player1">0</div>
+				<div class="current-score player1">
+					<p>CURRENT</p>
+					<div class="total-score player1">0</div>
+				</div>
+				<span class="red-dot player1"></span>
+			</section>
+			<section class="user-component player2">
+				<h2 class="user-name player2">PLAYER 2</h2>
+				<div class="score player2">0</div>
+				<div class="current-score player2">
+					<p>CURRENT</p>
+					<div class="total-score player2">0</div>
+				</div>
+				<span class="red-dot player2"></span>
+			</section>
+			<!-- 3. 주사위 -->
+			<div class="dice"></div>
+			<!-- 4. 주사위 굴리는 버튼 -->
+			<button type="button" class="btn-roll">ROLL</button>
+			<!-- 5. 점수 저장 버튼 -->
+			<button type="button" class="btn-bank">BANK</button>
+			<!-- 6. 최대 점수 설정 -->
+			<form class="score-max">
+				<legend>SELECT TARGET SCORE</legend>
+				<fieldset>
+					<div>
+						<label for="score_50">50</label>
+						<input type="radio" id="score_50" name="score_50" value="50"/>
+						<label for="score_100">100</label>
+						<input type="radio" id="score_100" name="score_100" value="100"/>
+					</div>
+				</fieldset>
+			</form>
+		</main>
+	</body>
 </html>
