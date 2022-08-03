@@ -5,6 +5,35 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Team Pig</title>
+		<link rel="stylesheet" href="./static/style.css" />
 	</head>
-	<body></body>
+	<body>
+		<!-- 숨김 제목 -->
+		<h1 class="sr-only">
+			피그 다이스 게임
+		</h1>
+		<!-- 게임 화면 -->
+		<main class="game-screen">
+			<!-- 1. 게임 시작 버튼 -->
+			<button type="button" class="btn-new">NEW GAME</button>
+			<!-- 2. 컴포넌트 -->
+
+			<!-- 3. 주사위 -->
+			<div class="dice"></div>
+			<!-- 4. 주사위 굴리는 버튼 -->
+			<button type="button" class="btn-roll">ROLL</button>
+			<!-- 5. 점수 저장 버튼 -->
+			<button type="button" class="btn-bank">BANK</button>
+			<!-- 6. 최대 점수 설정 -->
+			<form class="score-max">
+				<legend>SELECT TARGET SCORE</legend>
+				<fieldset>
+					<label>50</label>
+					<input type="radio" id="score_50" name="score_50" value="50"/>
+					<label>100</label>
+					<input type="radio" id="score_100" name="score_100" value="100"/>
+				</fieldset>
+			</form>
+		</main>
+	</body>
 </html>
